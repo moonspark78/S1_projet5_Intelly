@@ -194,7 +194,7 @@ main{
     margin-top: 45px;
     left: 230px;
     width: calc(100% - 230px);
-    height: calc(100vh - 65px);
+    min-height: calc(100vh - 65px);
     border: solid 2px greenyellow;
     padding: 24px;
     background-color: #F6F8FA;
@@ -280,10 +280,11 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 200px;
 }
 
 .chart-header .date{
-    border: solid 3px #7b1c91;
+    border: solid 2px #7b1c91;
     padding: 10px;
     border-radius: 13px;
     color: #7b1c91;
@@ -294,6 +295,24 @@ main{
     font-size: 23px;
 }
 
+
+
 .customer-wrapper{
+    padding: 10px;
     border: solid 2px #7b1c91;
+}
+.customer-wrapper .customer-list h3{
+    margin-bottom: 20px;
+}
+
+.customer-wrapper .customer-list ul{
+    list-style: none;
+    padding: 0;
+}
+
+.customer-wrapper .customer-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
 }
