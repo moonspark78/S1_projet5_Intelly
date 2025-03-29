@@ -1,33 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <title>Intelly</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <!-- Logo -->
-             <div class="logo">
-                <img src="./logotype.png" alt="logo">
-             </div>
-             <!-- Search -->
-             <div class="search-bar">
-                <input type="text" placeholder="Search...">
-             </div>
-             <!-- Profil + notification -->
-              <div class="profil">
-                <i class="fa-solid fa-burger"></i>
-                <p>Delicious Burger</p>
-                <i class="fa-solid fa-chevron-down"></i>
-              </div>
-              <div class="notification">
-                <i class="fa-solid fa-bell"></i>
-              </div>
-        </nav>
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="./logotype.png" alt="logo" />
+        </div>
+
+        <!-- Profil + notification -->
+        <div class="profil">
+          <!-- Search -->
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+          </div>
+
+          <div class="right">
+
+            <div class="burgger">
+              <i class="fa-solid fa-burger"></i>
+              <p>Delicious Burger</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="notification">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </nav>
     </header>
-</body>
+
+    <!------------------------- aside-------------- -->
+    <aside>
+      <div class="menu">
+        <p>MENU</p>
+
+        <div>
+          <i class="fa-solid fa-table-columns"></i>
+          <p>Dashboard</p>
+        </div>
+
+        <div class="order">
+          <i class="fa-solid fa-box"></i>
+          <p>Orders</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="report">
+          <i class="fa-solid fa-chart-simple"></i>
+          <p>Reports</p>
+        </div>
+
+        <div class="track">
+          <i class="fa-solid fa-truck"></i>
+          <p>Track</p>
+        </div>
+
+        <div class="maintainance">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <p>Maintainance</p>
+        </div>
+
+
+      </div>
+    </aside>
+  </body>
 </html>
