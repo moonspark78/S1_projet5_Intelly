@@ -16,6 +16,8 @@ header{
     left: 0;
     right: 0;
     height: 64px;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar{
@@ -42,11 +44,13 @@ header{
 .search-bar input {
     width: 625px;
     height: 32px;
-    padding: 17px;
+    padding: 12px;
     background-color: #F5F5F7;
     border: none;
     border-radius: 8px;
 }
+
+
 
 .right{
     display: flex;
@@ -78,14 +82,24 @@ header{
     right: 0;
 }
 
-/* -------------Aside */
+.fa-burger{
+    color: orange;
+    font-size: 26px;
+    background-color: rgb(225, 140, 110);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* -------------Aside_________________________________________ */
 
 aside{
     margin-top: 45px;
-    border: solid 1px blue;
+    border: solid 2px blue;
     width: 230px;
-    height: 100vh;
+    height: calc(100vh - 65px);
     padding: 10px;
+    position: fixed;
+    left: 0;
 }
 
 
@@ -168,4 +182,118 @@ aside{
     align-items: center;
     gap: 8px;
     padding: 10px;
+}
+
+
+
+/* -----------------Main ----------------- */
+
+main{
+    position: absolute;
+    top: 65px;
+    margin-top: 45px;
+    left: 230px;
+    width: calc(100% - 230px);
+    height: calc(100vh - 65px);
+    border: solid 2px greenyellow;
+    padding: 24px;
+    background-color: #F6F8FA;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.card .card-icon {
+    font-size: 22px !important;
+}
+
+.card .icon1{
+    padding: 15px;
+    background: radial-gradient(circle, rgba(169,69,248,1) 7%, rgba(230,79,152,1) 82%);
+    border-radius: 12px;
+}
+
+.card .icon2{
+    padding: 15px;
+    background: radial-gradient(circle, rgba(79,230,82,1) 31%, rgba(224,248,69,1) 87%);
+    border-radius: 12px;
+}
+.card .icon3{
+    padding: 15px;
+    background: radial-gradient(circle, rgba(248,69,69,1) 7%, rgba(248,224,69,1) 82%);
+    border-radius: 12px;
+}
+.card .icon4{
+    padding: 15px;
+    background: radial-gradient(circle, rgba(230,79,98,1) 13%, rgba(248,124,69,1) 87%);
+    border-radius: 12px;
+}
+
+.card .card-content span{
+    font-size: 14px;
+    color: #34d828;
+}
+
+.card .card-content p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight:400;
+}
+
+
+/* -------------------graphs */
+
+.chart-section{
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-header .date{
+    border: solid 3px #7b1c91;
+    padding: 10px;
+    border-radius: 13px;
+    color: #7b1c91;
+    text-align: center;
+}
+
+.chart-header .date .fa-calendar{
+    font-size: 23px;
+}
+
+.customer-wrapper{
+    border: solid 2px #7b1c91;
 }
