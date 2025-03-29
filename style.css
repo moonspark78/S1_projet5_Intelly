@@ -29,7 +29,7 @@ header{
     text-align: center;
 }
 .navbar .logo img{
-    width: 80%;
+    width: 50%;
 }
 .profil{
     display: flex;
@@ -42,7 +42,10 @@ header{
 .search-bar input {
     width: 625px;
     height: 32px;
-    padding: 7px;
+    padding: 17px;
+    background-color: #F5F5F7;
+    border: none;
+    border-radius: 8px;
 }
 
 .right{
@@ -60,10 +63,109 @@ header{
     margin-right: 28px;
 }
 
+.notification{
+    position: relative;
+}
+.fa-bell{
+    font-size: 26px;
+    color: #635b5b;
+}
+.badge{
+    position: absolute;
+    border-radius: 50%;
+    border: solid 4px red;
+    top: 0;
+    right: 0;
+}
+
 /* -------------Aside */
 
 aside{
     margin-top: 45px;
     border: solid 1px blue;
-    width: 2200px;
+    width: 230px;
+    height: 100vh;
+    padding: 10px;
+}
+
+
+.dash{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #635b5b;
+    padding: 14px 22px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+}
+
+.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.order .order-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.report{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+.track{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+.maintainance{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+.system{
+    margin-top: 35px;
+}
+.system > p{
+    margin-left: 30px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.data-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+.role{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
 }
