@@ -379,3 +379,19 @@ table{
     margin-top: 40px;   
 }
 
+thead{
+    background-color: #F5F5F7;
+}
+thead th{
+    font-weight: bold;
+}
+
+th, td{
+    border-bottom: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.pagination{
+    
+}
