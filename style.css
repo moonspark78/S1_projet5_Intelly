@@ -281,6 +281,7 @@ main{
     justify-content: space-between;
     align-items: center;
     gap: 200px;
+    margin-bottom: 50px;
 }
 
 .chart-header .date{
@@ -316,3 +317,65 @@ main{
     align-items: center;
     padding: 9px;
 }
+
+.chart-content {
+    height: 400px;
+    position: relative;
+    padding: 40px 40px 20px;
+    align-self: end;
+}
+
+.y-axe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #666;
+    font-size: 12px;
+}
+.x-axis {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* -----------------Overview-------------------- */
+
+.customer-section{
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header input{
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F5F5F7;
+    width: 200px;
+}
+
+
+table{
+    width: 100%;
+    margin-top: 40px;   
+}
+
