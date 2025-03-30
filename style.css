@@ -300,7 +300,8 @@ main{
 
 .customer-wrapper{
     padding: 10px;
-    border: solid 2px #7b1c91;
+    padding-left: 20px;
+    border-left: 3px solid #dbd5dc;
 }
 .customer-wrapper .customer-list h3{
     margin-bottom: 20px;
@@ -392,6 +393,34 @@ th, td{
     text-align: center;
 }
 
+/* ------------------Pagination --------- */
+
 .pagination{
-    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 87%;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.pagination  .active{
+    color: rgb(149, 138, 138);
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination .act{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination .to{
+    background-color: #7b1c91;
 }
